@@ -10,7 +10,7 @@ def count_everything(string):
     for c in l:
         if c.isdigit():
             digit_count += 1
-        else:
+        elif c.isalpha():
             char_count += 1
     
     return {"charcaters":char_count, "numbers":digit_count}
